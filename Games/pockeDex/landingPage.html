@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect four landing project</title>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#"> <span>Portfolio</span> </a>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <h1>Landing page</h1>
+            <p>This project is a simple Pokedex project. It offers a profile of the first 150th pokemons from OG series.
+                "Gotta catch 'em all"
+            </p>
+            <div class="btn">
+                <a href="#project">Project</a>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="../../Images/img-HTML.png" alt="Image 1">
+            <img src="../../Images/img-CSS.png" alt="Image 2">
+            <img src="../../Images/img-JS.png" alt="Image 3">
+
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="project-image-wrapper">
+            <img class="project-image" src="../images/Pokedox.png" alt="Project Image">
+        </div>
+        <div class="btn-project">
+            <a href="./index.html" target="_blank">Try for yourself</a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <img src="../../Images/bxl-facebook.svg" alt="Facebook Icon">
+        <img src="../../Images/bxl-twitter.svg" alt="Twitter Icon">
+        <img src="../../Images/bxl-instagram.svg" alt="Instagram Icon">
+        <img src="../../Images/bxl-youtube.svg" alt="YouTube Icon">
+    </footer>
+
+    <div class="all-rights">
+        <span>All rights reserved to Yakir </span>
+        <span>Yakir 2023</span>
+    </div>
+    <script>
+        // Function to smoothly scroll to the specified section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Add event listener to the "For the project" button (existing event listener)
+        const forTheProjectButton = document.querySelector('.btn a');
+        forTheProjectButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            scrollToSection('project');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="Css/login-project.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#"> <span>Portfolio</span> </a>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <h1>Login menu</h1>
+            <p>This project presents the client with a clean and pretty menu page. <br> The client can
+                interface
+                with the login menu and its astonishing visuals. <br>
+            </p>
+            <div class="btn">
+                <a href="#project">Project</a>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="Images/img-HTML.png" alt="Image 1">
+            <img src="Images/img-CSS.png" alt="Image 2">
+            <img src="Images/img-JS.png" alt="Image 3">
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="project-image-wrapper">
+            <img class="project-image" src="Images/Login.png" alt="Project Image">
+        </div>
+        <div class="btn-project">
+            <a href="Login-Menu/Login.html" target="_blank">Download Project</a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <img src="Images/bxl-facebook.svg" alt="Facebook Icon">
+        <img src="Images/bxl-twitter.svg" alt="Twitter Icon">
+        <img src="Images/bxl-instagram.svg" alt="Instagram Icon">
+        <img src="Images/bxl-youtube.svg" alt="YouTube Icon">
+    </footer>
+
+    <div class="all-rights">
+        <span>All rights reserved to Yakir </span>
+        <span>Yakir 2023</span>
+    </div>
+    <script>
+        // Function to smoothly scroll to the specified section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Add event listener to the "For the project" button (existing event listener)
+        const forTheProjectButton = document.querySelector('.btn a');
+        forTheProjectButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            scrollToSection('project');
+        });
+    </script>
+</body>
+
+</html>

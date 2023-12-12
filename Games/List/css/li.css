@@ -1,0 +1,38 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1000;
+}
+
+#optionsMenu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: top 0.3s;
+    z-index: 1001;
+}
+
+.option {
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 2rem;
+    color: #5b4001;
+}
+
+.option:hover {
+    background-color: #f6cd3a73;
+}

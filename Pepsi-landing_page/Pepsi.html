@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi-Land_page</title>
+    <link rel="stylesheet" href="Css/Pepsi.css">
+    <script src="JavaScript/Pepsi.js" defer></script>
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"> <img src="Images/logo.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</li></a>
+                <li><a href="#">What's New</li></a>
+                <li><a href="#">Newsletter</li></a>
+                <li><a href="#">Contact</li></a>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <span> I like </span></h2>
+                <p>Lorem ipsum adipisicing elit. Delectus, tempora repellat mollitia aliquam
+                    id nobis quaerat laboriosam. Tempora,
+                    exercitationem.</p>
+                <a href="pepsi-project.zip">Download project</a>
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')" alt=""></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')" alt=""></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="Images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="Images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="Images/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <!-- <script>
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script> -->
+</body>
+
+</html>

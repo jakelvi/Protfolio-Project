@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,900&display=swap");
+
+* {
+    text-align: center;
+    font-family: 'LilitaOne';
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: #2e0c4c;
+    border: 5px solid #f8bebe;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.tile {
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid #f8bebe;
+}
+
+.redPiece {
+    background-color: rgba(216, 8, 50, 0.724);
+}
+
+.bluePiece {
+    background-color: rgba(8, 143, 239, 0.62);
+}
